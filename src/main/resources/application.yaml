@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          default-label: master 
+          uri: https://github.com/crichito/config_data
+          search-paths: / 
+  security:
+    user:
+      name: root
+      password: pr0y3ct0
+
+  application:
+    name: config-service
+
+
